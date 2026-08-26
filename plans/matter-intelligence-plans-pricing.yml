@@ -1,0 +1,21 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.matter.com/
+plan_count: 0
+currency: null
+note: >-
+  Matter Intelligence publishes no plans, tiers or pricing of any kind. https://www.matter.com/pricing
+  returns 404 and no pricing page appears in the site's own sitemap.xml (which lists only /, /aerospace,
+  /application, /technology, /robotics, /team, /privacy-policy and five /leadership/* pages). The single
+  commercial entry point on the site is an "Early Access" Typeform at
+  https://matterintelligence.typeform.com/earlyaccess (HTTP 200), which requests contact details rather
+  than offering a purchasable tier. The company is pre-launch: its first satellite, EARTH-1, has not
+  flown, so this is an honest zero for a company with nothing yet to sell rather than a hidden price list.
+plans: []
+evidence:
+- url: https://www.matter.com/pricing
+  status: 404
+- url: https://www.matter.com/sitemap.xml
+  status: 200
+- url: https://matterintelligence.typeform.com/earlyaccess
+  status: 200

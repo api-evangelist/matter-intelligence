@@ -1,0 +1,36 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTP probes of https://www.matter.com/.well-known/* on 2026-08-25
+note: >-
+  Every probed path returned HTTP 404 from the Webflow-hosted marketing site. No
+  /.well-known/ document of any kind is served, so no WellKnown or SecurityTxt pointer is
+  wired into apis.yml — this file records a measured absence, not a surface. Matter
+  Intelligence operates no api./docs./developer. subdomain (all NXDOMAIN as of this probe),
+  so www.matter.com is the only host there is to probe.
+hosts:
+- host: www.matter.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

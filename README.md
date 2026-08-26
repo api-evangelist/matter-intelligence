@@ -64,5 +64,42 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Matter Intelligence is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Matter Intelligence is a California-based remote sensing and physical-AI company founded in 2024 by
+former NASA Jet Propulsion Laboratory engineers Vishnu Sridhar and Thomas Chrien with former Caltech
+scientist Nathan Stein. It builds ultraspectral imaging sensors that capture roughly 2,000 spectral
+bands from deep ultraviolet through thermal infrared — enough to read the molecular chemistry of a
+surface rather than only its color — and pairs them with Large Geospatial Models. Its first satellite,
+EARTH-1, is intended to deliver sub-meter hyperspectral and thermal imaging. The company emerged from
+stealth in October 2024 with a $12M seed round led by Lowercarbon Capital (Toyota Ventures, Pear VC,
+E2MC and Mark Cuban participating).
+
+- Website: https://www.matter.com/
+- GitHub: https://github.com/matter-intelligence (0 public repositories)
+- Early access: https://matterintelligence.typeform.com/earlyaccess
+
+## No API surface (checked 2026-08-25)
+
+Matter Intelligence publishes no API, developer portal, documentation, SDK or machine-readable
+contract. Probed on 2026-08-25:
+
+- `api.`, `docs.`, `developer.`, `developers.`, `app.`, `console.`, `platform.`, `data.`, `mcp.`,
+  `status.` and `blog.` .matter.com — all NXDOMAIN.
+- `www.matter.com` `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`, `/api-docs`,
+  `/docs`, `/redoc`, `/graphql`, `/llms.txt` — all HTTP 404.
+- Every `/.well-known/` path (security.txt, api-catalog, agent-card.json, agent.json, ai-plugin.json,
+  openid-configuration, oauth-authorization-server, oauth-protected-resource) — all HTTP 404. Recorded
+  in `well-known/matter-intelligence-well-known.yml`.
+- No packages on npm or PyPI; no MCP server; no A2A agent card.
+
+The earlier stub listed https://www.nasdaqprivatemarket.com/ as this company's website. That was the
+secondary-market venue it was harvested from, not Matter Intelligence's site; it has been corrected to
+https://www.matter.com/.
+
+## Artifacts in this repo
+
+| Path | Type | Method |
+|---|---|---|
+| `security/matter-intelligence-domain-security.yml` | DomainSecurity | probed |
+| `well-known/matter-intelligence-well-known.yml` | (absence recorded — no pointer) | probed |
+| `plans/matter-intelligence-plans-pricing.yml` | Plans (plan_count: 0) | searched |
+| `llms/matter-intelligence-llms.txt` | LLMsTxt | generated |
