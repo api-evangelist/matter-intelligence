@@ -16,6 +16,17 @@ description: >-
   and pre-product: matter.com is a marketing site with an Early Access request form, and Matter
   Intelligence publishes no public API, developer portal, documentation, SDK or machine-readable
   contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.matter.com/images/cdn/opengraph.jpg
 url: https://raw.githubusercontent.com/api-evangelist/matter-intelligence/refs/heads/main/apis.yml
 x-type: company
